@@ -3,6 +3,10 @@ const dots = document.querySelectorAll(".dot");
 const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".prev");
 
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobile-menu");
+const closeMenu = document.getElementById("close-menu");
+
 let index = 0;
 
 function showSlide(i) {
@@ -27,5 +31,20 @@ dots.forEach((dot, i) => {
   dot.addEventListener("click", () => {
     index = i;
     showSlide(i);
+  });
+});
+
+hamburger.addEventListener("click", () => {
+  mobileMenu.style.display = "flex";
+});
+
+closeMenu.addEventListener("click", () => {
+  mobileMenu.style.display = "none";
+});
+
+// Optional: Close when clicking a link
+document.querySelectorAll("#mobile-menu a").forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.style.display = "none";
   });
 });

@@ -14,38 +14,104 @@
     <div class="container">
       <!-- Navbar -->
       <div id="navbar">
-        <a href="./index.html">
+        <a href="./index.html" class="logo">
           <img
-            src="/coffee-house/assets/icons/logo.svg"
-            alt=""
+            src="/assets/icons/logo.svg"
+            alt="logo"
             width="100px"
             height="60px"
-        /></a>
+          />
+        </a>
+
+        <!-- Desktop menu -->
         <nav>
-          <a href="#carousel">Favourite coffee</a>
+          <a href="#carousel">Favorite coffee</a>
           <a href="#about">About</a>
           <a href="#mobile">Mobile app</a>
           <a href="#footer">Contact us</a>
         </nav>
+
         <button id="menu-btn">
-          <a href="/coffee-house/menu.html">
+          <a href="/menu.html">
             <p>Menu</p>
             <img
-              src="/coffee-house/assets/icons/coffee-cup.svg"
+              src="/assets/icons/coffee-cup.svg"
               alt=""
               width="20px"
               height="20px"
-          /></a>
+            />
+          </a>
         </button>
+
+        <!-- Hamburger icon (visible on mobile) -->
+        <img
+          id="hamburger"
+          src="/assets/icons/BurgerIcon.svg"
+          alt="logo"
+          width="44px"
+          height="44px"
+        />
       </div>
+
+      <!-- Fullscreen mobile menu -->
+      <div id="mobile-menu">
+        <div id="menu-logo">
+          <a href="./index.html" class="logo">
+            <img
+              src="/assets/icons/logo.svg"
+              alt="logo"
+              width="100px"
+              height="60px"
+            /> </a
+          ><img
+            id="close-menu"
+            src="/assets/icons/Xicon.svg"
+            alt="close-icon"
+            width="44px"
+            height="44px"
+          />
+        </div>
+        <div id="menu-navbar">
+          <a href="#carousel">Favorite coffee</a>
+          <a href="#about">About</a>
+          <a href="#mobile">Mobile app</a>
+          <a href="#footer">Contact us</a>
+          <a href="/menu.html" class="mobile-menu-link">
+            Menu
+            <img
+              src="/assets/icons/coffee-cup.svg"
+              width="40px"
+              height="40px"
+            />
+          </a>
+        </div>
+      </div>
+
+      <script>
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenu = document.getElementById("close-menu");
+
+        hamburger.addEventListener("click", () => {
+          mobileMenu.style.display = "flex";
+        });
+
+        closeMenu.addEventListener("click", () => {
+          mobileMenu.style.display = "none";
+        });
+
+        // Optional: Close when clicking a link
+        document.querySelectorAll("#mobile-menu a").forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenu.style.display = "none";
+          });
+        });
+      </script>
 
       <!-- Hero Section -->
       <section id="hero">
         <video autoplay muted loop playsinline id="hero-video">
-          <source
-            src="/coffee-house/assets/images/hero-video.mp4"
-            type="video/mp4"
-          />
+          <source src="/assets/images/hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -65,12 +131,12 @@
       </section>
 
       <!-- carousel -->
-      <section id="carousel" class="carousel">
+      <!-- <section id="carousel" class="carousel">
         <h1>Choose your <span class="favorite">favorite</span> coffee</h1>
         <div id="carousel-flex">
           <button class="nav-btn prev">
             <img
-              src="/coffee-house/assets/images/button-icon-dark-left.svg"
+              src=" /assets/images/button-icon-dark-left.svg"
               alt="prev"
               width="60px"
               height="60px"
@@ -79,7 +145,7 @@
           <div class="carousel-container">
             <div class="slide active">
               <img
-                src="/coffee-house/assets/images/coffee-slider/coffee-slider-1.svg"
+                src=" /assets/images/coffee-slider/coffee-slider-1.svg"
                 alt="S'mores Frappuccino"
               />
               <h2>S'mores Frappuccino</h2>
@@ -92,7 +158,7 @@
 
             <div class="slide">
               <img
-                src="/coffee-house/assets/images/coffee-slider/coffee-slider-2.svg"
+                src=" /assets/images/coffee-slider/coffee-slider-2.svg"
                 alt="Caramel Macchiato"
               />
               <h2>Caramel Macchiato</h2>
@@ -105,7 +171,7 @@
 
             <div class="slide">
               <img
-                src="/coffee-house/assets/images/coffee-slider/coffee-slider-3.svg"
+                src=" /assets/images/coffee-slider/coffee-slider-3.svg"
                 alt="Iced Latte"
               />
               <h2>Iced Latte</h2>
@@ -118,7 +184,7 @@
           </div>
           <button class="nav-btn next">
             <img
-              src="/coffee-house/assets/images/button-icon-dark-right.svg"
+              src=" /assets/images/button-icon-dark-right.svg"
               alt="next"
               width="60px"
               height="60px"
@@ -131,33 +197,33 @@
           <span class="dot"></span>
           <span class="dot"></span>
         </div>
-      </section>
+      </section> -->
       <!-- About -->
-      <section id="about">
+      <!-- <section id="about">
         <h1>
           Resource is
           <span class="favorite">the perfect and cozy place</span> where you can
           enjoy a variety of hot beverages, relax, catch up with friends, or get
           some work done.
-        </h1>
-        <!-- recommended: wrap each image in a grid item -->
-        <div class="about-grid">
+        </h1> -->
+      <!-- recommended: wrap each image in a grid item -->
+      <!-- <div class="about-grid">
           <div class="grid-item tall">
-            <img src="/coffee-house/assets/images/about/about-1.svg" alt="" />
+            <img src=" /assets/images/about/about-1.svg" alt="" />
           </div>
           <div class="grid-item short">
-            <img src="/coffee-house/assets/images/about/about-3.svg" alt="" />
+            <img src=" /assets/images/about/about-3.svg" alt="" />
           </div>
           <div class="grid-item tall">
-            <img src="/coffee-house/assets/images/about/about-4.svg" alt="" />
+            <img src=" /assets/images/about/about-4.svg" alt="" />
           </div>
           <div class="grid-item short">
-            <img src="/coffee-house/assets/images/about/about-2.svg" alt="" />
+            <img src=" /assets/images/about/about-2.svg" alt="" />
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Mobile app -->
-      <section id="mobile" class="mobile">
+      <!-- <section id="mobile" class="mobile">
         <div class="mobile-left">
           <h1>
             <span class="favorite">Download</span> our apps to start ordering
@@ -202,10 +268,10 @@
             height="630"
           />
         </div>
-      </section>
+      </section> -->
 
       <!-- Footer -->
-      <footer id="footer">
+      <!-- <footer id="footer">
         <div>
           <h1>
             Sip, Savor, Smile. <br /><span class="favorite"
@@ -263,8 +329,9 @@
             </li>
           </ul>
         </div>
-      </footer>
+      </footer> -->
     </div>
-    <script src="/coffee-house/js/script.js"></script>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>
