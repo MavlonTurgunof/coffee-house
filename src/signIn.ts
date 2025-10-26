@@ -58,7 +58,7 @@ if (form) {
       localStorage.setItem("user", JSON.stringify(result.data.user));
 
       // ✅ Redirect to home (or wherever you want)
-      window.location.href = "/cart.html";
+      window.location.href = "./cart.html";
     } catch (error) {
       alert(`Error: ${(error as Error).message}`);
     }

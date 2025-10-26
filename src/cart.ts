@@ -156,7 +156,7 @@ confirmBtn?.addEventListener("click", async () => {
       })
     );
 
-    window.location.href = "/confirm.html";
+    window.location.href = "./confirm.html";
   } catch (err) {
     console.error(err);
     alert("Something went wrong while confirming your order.");

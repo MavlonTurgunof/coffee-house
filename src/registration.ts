@@ -96,7 +96,7 @@ if (form) {
       }
 
       alert("Registration successful!");
-      window.location.href = "/signIn.html"; // ✅ redirect on success
+      window.location.href = "./signIn.html"; // ✅ redirect on success
     } catch (error) {
       alert(`Error: ${(error as Error).message}`);
     }
