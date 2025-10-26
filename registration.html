@@ -33,6 +33,54 @@
       <!-- Registration -->
       <section>
         <h1>Registration</h1>
+        <form id="registration-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="login">Login</label>
+              <input type="text" id="login" placeholder="Placeholder" />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Placeholder" />
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder="Placeholder"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" id="city" placeholder="Placeholder" />
+            </div>
+            <div class="form-group">
+              <label for="street">Street</label>
+              <input type="text" id="street" placeholder="Placeholder" />
+            </div>
+            <div class="form-group">
+              <label for="house-number">House number</label>
+              <input type="text" id="house-number" placeholder="Placeholder" />
+            </div>
+          </div>
+
+          <div class="form-row pay-row">
+            <label>Pay by</label>
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="pay" value="cash" checked />
+                Cash</label
+              >
+              <label><input type="radio" name="pay" value="card" /> Card</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn">Registration</button>
+        </form>
       </section>
 
       <footer id="footer">
@@ -95,6 +143,6 @@
         </div>
       </footer>
     </div>
-    <script type="module" src=" /js/menu.js"></script>
+    <script src="./dist/registration.js"></script>
   </body>
 </html>

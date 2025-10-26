@@ -35,38 +35,22 @@
       <div>
         <h2 id="title">Cart</h2>
         <div id="cart-items">
-          <div class="cart-item">
-            <div class="cart-item-left">
-              <img
-                src="./assets/icons/trash.svg"
-                alt="delete"
-                width="24px"
-                height="24px"
-              />
-              <img
-                src="./assets/images/menu/dessert-1.svg"
-                alt="item"
-                width="100px"
-                height="100px"
-                class="cart-item-pic"
-              />
-              <div class="cart-item-name">
-                <h2>Marble cheesecake</h2>
-                <p>50g, Berries, Nuts</p>
-              </div>
-            </div>
-            <h2 class="cart-item-price">$3.50</h2>
-          </div>
-          <div id="total">
-            <h2>Total:</h2>
-            <p>$3.50</p>
-          </div>
-          <div id="login-btns">
-            <button id="signin"><a href="/signIn.html">Sign In</a></button>
-            <button id="registration">
-              <a href="/registration.html">Registration</a>
-            </button>
-          </div>
+          <!-- Items will be inserted here dynamically -->
+        </div>
+        <div id="total">
+          <h2>Total:</h2>
+          <p id="total-price">$0.00</p>
+        </div>
+        <div id="login-btns">
+          <button id="signin"><a href="/signIn.html">Sign In</a></button>
+          <button id="registration">
+            <a href="/registration.html">Registration</a>
+          </button>
+        </div>
+        <div id="confirm">
+          <button id="confirm-order" style="display: none">
+            Confirm Order
+          </button>
         </div>
       </div>
 
@@ -130,6 +114,6 @@
         </div>
       </footer>
     </div>
-    <script type="module" src=" /js/menu.js"></script>
+    <script src="./dist/cart.js" defer></script>
   </body>
 </html>

@@ -131,83 +131,47 @@
       </section>
 
       <!-- carousel -->
-      <!-- <section id="carousel" class="carousel">
+      <section id="carousel" class="carousel">
         <h1>Choose your <span class="favorite">favorite</span> coffee</h1>
+
         <div id="carousel-flex">
           <button class="nav-btn prev">
             <img
-              src=" /assets/images/button-icon-dark-left.svg"
+              src="/assets/images/button-icon-dark-left.svg"
               alt="prev"
-              width="60px"
-              height="60px"
+              width="60"
+              height="60"
             />
           </button>
-          <div class="carousel-container">
-            <div class="slide active">
-              <img
-                src=" /assets/images/coffee-slider/coffee-slider-1.svg"
-                alt="S'mores Frappuccino"
-              />
-              <h2>S'mores Frappuccino</h2>
-              <p>
-                This new drink takes an espresso and mixes it with brown sugar
-                and cinnamon before being topped with oat milk.
-              </p>
-              <span class="price">$5.50</span>
-            </div>
 
-            <div class="slide">
-              <img
-                src=" /assets/images/coffee-slider/coffee-slider-2.svg"
-                alt="Caramel Macchiato"
-              />
-              <h2>Caramel Macchiato</h2>
-              <p>
-                Espresso blended with creamy milk and caramel drizzle, the
-                perfect balance of sweet and strong.
-              </p>
-              <span class="price">$4.90</span>
-            </div>
-
-            <div class="slide">
-              <img
-                src=" /assets/images/coffee-slider/coffee-slider-3.svg"
-                alt="Iced Latte"
-              />
-              <h2>Iced Latte</h2>
-              <p>
-                Classic espresso poured over ice and mixed with chilled milk for
-                a smooth, refreshing taste.
-              </p>
-              <span class="price">$4.20</span>
-            </div>
+          <div class="carousel-container" id="carousel-container">
+            <div class="loader" id="loader">Loading...</div>
+            <div class="error" id="error"></div>
           </div>
+
           <button class="nav-btn next">
             <img
-              src=" /assets/images/button-icon-dark-right.svg"
+              src="/assets/images/button-icon-dark-right.svg"
               alt="next"
-              width="60px"
-              height="60px"
+              width="60"
+              height="60"
             />
           </button>
         </div>
 
-        <div class="dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </section> -->
+        <div class="dots" id="dots"></div>
+      </section>
+
       <!-- About -->
-      <!-- <section id="about">
+      <section id="about">
         <h1>
           Resource is
           <span class="favorite">the perfect and cozy place</span> where you can
           enjoy a variety of hot beverages, relax, catch up with friends, or get
           some work done.
-        </h1> -->
-      <!-- recommended: wrap each image in a grid item -->
-      <!-- <div class="about-grid">
+        </h1>
+        <!-- recommended: wrap each image in a grid item -->
+        <div class="about-grid">
           <div class="grid-item tall">
             <img src=" /assets/images/about/about-1.svg" alt="" />
           </div>
@@ -221,9 +185,9 @@
             <img src=" /assets/images/about/about-2.svg" alt="" />
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- Mobile app -->
-      <!-- <section id="mobile" class="mobile">
+      <section id="mobile" class="mobile">
         <div class="mobile-left">
           <h1>
             <span class="favorite">Download</span> our apps to start ordering
@@ -268,10 +232,10 @@
             height="630"
           />
         </div>
-      </section> -->
+      </section>
 
       <!-- Footer -->
-      <!-- <footer id="footer">
+      <footer id="footer">
         <div>
           <h1>
             Sip, Savor, Smile. <br /><span class="favorite"
@@ -329,9 +293,9 @@
             </li>
           </ul>
         </div>
-      </footer> -->
+      </footer>
     </div>
 
-    <script src="/js/script.js"></script>
+    <script src="./dist/main.js"></script>
   </body>
 </html>
