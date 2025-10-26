@@ -25,9 +25,9 @@ const errorEl = document.getElementById("error") as HTMLElement;
 const dotsContainer = document.getElementById("dots") as HTMLElement;
 
 const coffeeImages: Record<string, string> = {
-  "irish coffee": "/assets/images/coffee-slider/coffee-slider-1.svg",
-  "latte macchiato": "/assets/images/coffee-slider/coffee-slider-3.svg",
-  "honey raf": "/assets/images/coffee-slider/coffee-slider-3.svg",
+  "irish coffee": "./assets/images/coffee-slider/coffee-slider-1.svg",
+  "latte macchiato": "./assets/images/coffee-slider/coffee-slider-3.svg",
+  "honey raf": "./assets/images/coffee-slider/coffee-slider-3.svg",
   latte: "./assets/images/menu/coffee-6.svg",
   espresso: "./assets/images/menu/coffee-5.svg",
   "coffee with cognac": "./assets/images/menu/coffee-8.svg",

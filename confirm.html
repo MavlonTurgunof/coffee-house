@@ -9,26 +9,99 @@
   <body>
     <div class="container">
       <div id="navbar">
-        <a href="./index.html">
-          <img src=" /assets/icons/logo.svg" alt="" width="100px" height="60px"
-        /></a>
+        <a href="./index.html" class="logo">
+          <img
+            src="./assets/icons/logo.svg"
+            alt="logo"
+            width="100px"
+            height="60px"
+          />
+        </a>
+
+        <!-- Desktop menu -->
         <nav>
-          <a href="#">Favourite coffee</a>
-          <a href="#">About</a>
-          <a href="#">Mobile app</a>
-          <a href="#">Contact us</a>
+          <a href="#carousel">Favorite coffee</a>
+          <a href="#about">About</a>
+          <a href="#mobile">Mobile app</a>
+          <a href="#footer">Contact us</a>
         </nav>
+
         <button id="menu-btn">
-          <a href=" /menu.html">
+          <a href="./menu.html">
             <p>Menu</p>
             <img
-              src=" /assets/icons/coffee-cup.svg"
+              src="./assets/icons/coffee-cup.svg"
               alt=""
               width="20px"
               height="20px"
-          /></a>
+            />
+          </a>
         </button>
+
+        <!-- Hamburger icon (visible on mobile) -->
+        <img
+          id="hamburger"
+          src="./assets/icons/BurgerIcon.svg"
+          alt="logo"
+          width="44px"
+          height="44px"
+        />
       </div>
+
+      <!-- Fullscreen mobile menu -->
+      <div id="mobile-menu">
+        <div id="menu-logo">
+          <a href="./index.html" class="logo">
+            <img
+              src="./assets/icons/logo.svg"
+              alt="logo"
+              width="100px"
+              height="60px"
+            /> </a
+          ><img
+            id="close-menu"
+            src="/assets/icons/Xicon.svg"
+            alt="close-icon"
+            width="44px"
+            height="44px"
+          />
+        </div>
+        <div id="menu-navbar">
+          <a href="#carousel">Favorite coffee</a>
+          <a href="#about">About</a>
+          <a href="#mobile">Mobile app</a>
+          <a href="#footer">Contact us</a>
+          <a href="./menu.html" class="mobile-menu-link">
+            Menu
+            <img
+              src="./assets/icons/coffee-cup.svg"
+              width="40px"
+              height="40px"
+            />
+          </a>
+        </div>
+      </div>
+
+      <script>
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenu = document.getElementById("close-menu");
+
+        hamburger.addEventListener("click", () => {
+          mobileMenu.style.display = "flex";
+        });
+
+        closeMenu.addEventListener("click", () => {
+          mobileMenu.style.display = "none";
+        });
+
+        // Optional: Close when clicking a link
+        document.querySelectorAll("#mobile-menu a").forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenu.style.display = "none";
+          });
+        });
+      </script>
 
       <section id="reciept"> 
         <h1>Order Confirmation</h1>
