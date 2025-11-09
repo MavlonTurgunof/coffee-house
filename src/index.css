@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+body {
+  font-family: "Pacifico", sans-serif;
+}
+
+@theme {
+  --color-bg: #e1d4c9;
+  --color-secondary: #665f55;
+  --color-text1: #403f3d;
+  --color-text2: #e1d4c9;
+  --color-text3: #b0907a;
+  --color-bordermenu: #c1b6ad;
+}
+
+/* ul li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #403f3d;
+  transition: width 0.3s ease;
+}
+
+ul li:hover::after {
+  width: 100%;
+} */
