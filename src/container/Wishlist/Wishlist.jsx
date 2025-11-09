@@ -1,4 +1,3 @@
-// src/pages/Wishlist.jsx
 import React, { useEffect, useState } from "react";
 import { getWishlist, removeFromWishlist } from "../../utils/cart";
 import { MenuImages } from "../../Data/MenuData";

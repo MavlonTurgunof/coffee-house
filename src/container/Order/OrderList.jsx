@@ -1,4 +1,3 @@
-// src/pages/OrderList.jsx
 import React, { useMemo, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -99,7 +98,6 @@ export default function OrderList() {
           </div>
         ))}
 
-        {/* Summary */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2 pt-4">
           <div className="font-semibold">Total:</div>
           <div className="col-span-1 sm:col-start-3 text-right font-semibold">

@@ -1,4 +1,3 @@
-// OrderConfirmed.jsx
 import React from "react";
 import { useLocation, useParams, Link } from "react-router-dom";
 
@@ -34,7 +33,6 @@ export default function Confirmation() {
                 )}
                 <div>Qty: {it.quantity}</div>
               </div>
-              {/* price per line is unknown from API; optional: compute from cart if you passed it */}
             </div>
           ))}
         </div>

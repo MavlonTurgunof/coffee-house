@@ -1,6 +1,4 @@
 import React from "react";
-
-// adjust paths to match your project structure
 import about1 from "../../assets/images/about-1.svg";
 import about2 from "../../assets/images/about-2.svg";
 import about3 from "../../assets/images/about-3.svg";
