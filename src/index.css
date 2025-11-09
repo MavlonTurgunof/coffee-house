@@ -13,17 +13,63 @@ body {
   --color-bordermenu: #c1b6ad;
 }
 
-/* ul li::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #403f3d;
-  transition: width 0.3s ease;
+#about {
+  margin-top: 100px;
 }
 
-ul li:hover::after {
+#about h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 40px;
+}
+
+#about .favorite {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  grid-auto-rows: 10px;
+}
+
+.about-grid .grid-item {
   width: 100%;
-} */
+  overflow: hidden;
+  border-radius: 16px;
+  display: block;
+}
+
+.about-grid .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-grid .grid-item.tall {
+  grid-row: span 20;
+}
+
+.about-grid .grid-item.short {
+  grid-row: span 15;
+}
+
+/* optional: make it nicer on small screens */
+@media (max-width: 768px) {
+  #about h1 {
+    font-size: 34px;
+    line-height: 130%;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  .about-grid .grid-item.tall,
+  .about-grid .grid-item.short {
+    grid-row: auto;
+  }
+}

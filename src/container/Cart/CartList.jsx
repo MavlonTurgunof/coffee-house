@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { getCart, updateQty, removeFromCart } from "../../utils/cart";
 import Logo from "../../assets/logo.svg";
 import { MenuImages } from "../../Data/MenuData";
+import { Link, useNavigate } from "react-router-dom";
 
 const imgByName = (name) => MenuImages?.[name?.toLowerCase?.() || ""] || Logo;
 
@@ -15,6 +16,12 @@ export default function CartList() {
   useEffect(() => {
     refresh();
   }, []);
+
+  const nav = useNavigate();
+  const onPlaceOrder = () => {
+    const token = localStorage.getItem("access_token");
+    nav(token ? "/order" : "/signin");
+  };
 
   const subTotal = cart.reduce((s, x) => s + x.unitPrice * x.qty, 0);
 
@@ -84,6 +91,12 @@ export default function CartList() {
           <div className="flex justify-end text-xl font-bold">
             Subtotal: {toMoney(subTotal)}
           </div>
+          <button
+            onClick={onPlaceOrder}
+            className="border border-secondary hover:text-text2 hover:bg-secondary px-4 py-2"
+          >
+            Place order
+          </button>
         </div>
       )}
     </section>
